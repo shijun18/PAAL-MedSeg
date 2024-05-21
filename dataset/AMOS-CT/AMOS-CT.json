@@ -1,0 +1,66 @@
+{
+    "nii_path":"/staff/shijun/dataset/AMOS2022/CT",
+    "modality":"CT",
+    "image_postfix":"imagesTr/amos_*.nii.gz",
+    "label_postfix":"labelsTr/amos_*.nii.gz",
+    "npy_path":"/staff/shijun/dataset/Med_Seg/AMOS-CT/npy_data",
+    "metadata_path":"/staff/shijun/torch_projects/Med_Seg/converter/nii_converter/meta_data/amos_ct_metadata.csv",
+    "annotation_num":15,
+    "annotation_list":[
+       "Spleen",
+       "Kidney-R", 
+       "Kidney-L", 
+       "Gall Bladder", 
+       "Esophagus", 
+       "Liver", 
+       "Stomach", 
+       "Arota", 
+       "Postcava",
+       "Pancreas", 
+       "Right Adrenal Gland", 
+       "Left Adrenal Gland", 
+       "Duodenum", 
+       "Bladder",     
+       "Prostate_Uterus"
+    ],
+    "target_format":{
+        "size":[512,512],
+        "thickness":5.0,
+        "WL":100,
+        "WW":600,
+        "scale":[-200,400],
+        "pixel_spacing":0.78
+    },
+    "2d_data":{
+        "save_path":"/staff/shijun/dataset/Med_Seg/AMOS-CT/2d_data",
+        "test_path":"/staff/shijun/dataset/Med_Seg/AMOS-CT/2d_test_data",
+        "crop":0,
+        "shape":[512,512],
+        "csv_path":"/staff/shijun/torch_projects/Med_Seg/converter/nii_converter/static_files/amos_ct.csv",
+        "area_path":"/staff/shijun/torch_projects/Med_Seg/converter/nii_converter/static_files/amos_ct_area.csv"
+    },
+    "3d_data":{
+        "save_path":"/staff/shijun/dataset/Med_Seg/AMOS-CT/3d_data",
+        "test_path":"/staff/shijun/dataset/Med_Seg/AMOS-CT/3d_test_data",
+        "crop":0,
+        "shape":[96,256,256]
+    },
+    "scale":{
+        "Spleen":[-200,400],
+        "Kidney-R":[-200,400], 
+        "Kidney-L":[-200,400], 
+        "Gall Bladder":[-200,400], 
+        "Esophagus":[-200,400], 
+        "Liver":[-200,400], 
+        "Stomach":[-200,400], 
+        "Arota":[-200,400], 
+        "Postcava":[-200,400],
+        "Pancreas":[-200,400], 
+        "Right Adrenal Gland":[-200,400], 
+        "Left Adrenal Gland":[-200,400], 
+        "Duodenum":[-200,400], 
+        "Bladder":[-200,400],     
+        "Prostate_Uterus":[-200,400],
+        "All":[-200,400]
+    }
+}

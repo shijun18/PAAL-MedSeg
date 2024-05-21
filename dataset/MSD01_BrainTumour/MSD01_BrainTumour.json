@@ -1,0 +1,39 @@
+{
+    "nii_path":"/staff/shijun/dataset/MSD/Task01_BrainTumour",
+    "modality":"FLAIR, T1w, T1gd,T2w",
+    "image_postfix":"imagesTr/BRATS_*.nii.gz",
+    "label_postfix":"labelsTr/BRATS_*.nii.gz",
+    "npy_path":"/staff/shijun/dataset/Med_Seg/MSD01_BrainTumour/npy_data",
+    "metadata_path":"/staff/shijun/torch_projects/Med_Seg/converter/nii_converter/meta_data/msd01_braintumor_metadata.csv",
+    "annotation_num":3,
+    "annotation_list":[
+        "Edema", 
+        "Non-enhancing tumor", 
+        "Enhancing tumour"
+    ],
+    "target_format":{
+        "size":[4,240,240],
+        "thickness":1.0,
+        "pixel_spacing":1.0
+    },
+    "2d_data":{
+        "save_path":"/staff/shijun/dataset/Med_Seg/MSD01_BrainTumour/2d_data-norm",
+        "test_path":"/staff/shijun/dataset/Med_Seg/MSD01_BrainTumour/2d_test_data",
+        "crop":0,
+        "shape":[4,240,240],
+        "csv_path":"/staff/shijun/torch_projects/Med_Seg/converter/nii_converter/static_files/msd01_braintumor.csv",
+        "area_path":"/staff/shijun/torch_projects/Med_Seg/converter/nii_converter/static_files/msd01_braintumor_area.csv"
+    },
+    "3d_data":{
+        "save_path":"/staff/shijun/dataset/Med_Seg/MSD01_BrainTumour/3d_data",
+        "test_path":"/staff/shijun/dataset/Med_Seg/MSD01_BrainTumour/3d_test_data",
+        "crop":0,
+        "shape":[4,128,256,256]
+    },
+    "scale":{
+        "Edema":[0,255],
+        "Non-enhancing tumor":[0,255],
+        "Enhancing tumour":[0,255],
+        "All":[0,255]
+    }
+}

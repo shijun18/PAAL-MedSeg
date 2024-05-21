@@ -18,10 +18,10 @@ __Sample_strategy__ = ['norm','iq']
 __mode__ = ['2d']
 
 json_path = {
-    'Liver':'./dataset/Liver_Oar.json',
-    'SegTHOR':'./dataset/SegTHOR.json',
-    'ACDC':'./dataset/ACDC.json',
-    'MSD01_BrainTumour':'./dataset/MSD01_BrainTumour.json',# multi-modality
+    'Liver':'./dataset/Liver/Liver_Oar.json',
+    'SegTHOR':'./dataset/SegTHOR/SegTHOR.json',
+    'ACDC':'./dataset/ACDC/ACDC.json',
+    'MSD01_BrainTumour':'./dataset/MSD01_BrainTumour/MSD01_BrainTumour.json',# multi-modality
 }
 
 SAMPLE_TIMES_MAP = {
@@ -124,9 +124,7 @@ INPUT_SHAPE_DICT = {
 
 INPUT_SHAPE = INPUT_SHAPE_DICT[DATASET]
 
-if SAMPLER_NAME is None:
-    BATCH_SIZE = 128 
-elif SAMPLER_NAME  == 'loss_predictor': # too large will drop too many data, because the lpl loss need bs % 2 == 0
+if SAMPLER_NAME  == 'loss_predictor': # too large will drop too many data, because the lpl loss need bs % 2 == 0
     BATCH_SIZE = 32 
 else:
     BATCH_SIZE = 64
@@ -138,7 +136,6 @@ print(SEG_WEIGHT_PATH)
 
 CHANNEL_DICT = {
     'ACDC':1,
-    'MSD02_Heart':1,
     'SegTHOR':1,
     'Liver':1,
     'MSD01_BrainTumour':4,

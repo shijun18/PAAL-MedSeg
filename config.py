@@ -18,10 +18,10 @@ __Sample_strategy__ = ['norm','iq']
 __mode__ = ['2d-AL']
 
 json_path = {
-    'Liver':'./dataset/Liver_Oar.json',
-    'SegTHOR':'./dataset/SegTHOR.json',
-    'ACDC':'./dataset/ACDC.json',
-    'MSD01_BrainTumour':'./dataset/MSD01_BrainTumour.json',# multi-modality
+    'Liver':'./dataset/Liver/Liver_Oar.json',
+    'SegTHOR':'./dataset/SegTHOR/SegTHOR.json',
+    'ACDC':'./dataset/ACDC/ACDC.json',
+    'MSD01_BrainTumour':'./dataset/MSD01_BrainTumour/MSD01_BrainTumour.json',# multi-modality
 }
 
 
